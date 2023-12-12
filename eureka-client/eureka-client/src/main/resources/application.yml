@@ -1,0 +1,27 @@
+
+server:
+  port: 9099
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+  application:
+    name: eureka-client
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/eureka_client
+    username: root
+    password: root
+
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    prefer-ip-address: true
+
+
+
